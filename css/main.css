@@ -6,8 +6,8 @@
 html,
 body {
   height: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
@@ -22,11 +22,11 @@ body {
 main {
   background-color: white;
   width: 100%;
-  max-width: 70vh;
+  max-width: 90vh;
   min-width: 320px;
   min-height: 25rem;
   border-radius: 1rem;
-  box-shadow: 1px 8px 14px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 8px 25px rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: space-between;
 }
@@ -35,7 +35,8 @@ main {
   flex-basis: 50%;
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: cover;
-  background-position-x: -10px;
+  background-position-x: -10rem;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   position: relative;
@@ -68,6 +69,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.4rem;
+  cursor: pointer;
 }
 
 .faq__question:not(:first-child) {
@@ -80,21 +82,23 @@ main {
 
 .faq__answer {
   margin: 0;
-  display: none;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  max-height: 0;
 }
 
 .active + .faq__answer {
   display: block;
+  max-height: 8rem;
 }
 
 .faq__question--arrow {
   align-self: center;
-  cursor: pointer;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .active .faq__question--arrow {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 .faq__separator {
   margin-top: 0.8rem;
