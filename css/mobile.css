@@ -1,10 +1,31 @@
 /* MQ */
 @media screen and (max-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+  .box {
+    display: none;
+  }
+  .images {
+    display: block;
+    height: 20vh;
+    background-position-x: 0vw;
+    background-position-y: -56vh;
+  }
+  .image {
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    top: -122%;
+  }
+  .image__element {
+    left: 0vw;
+  }
   .main {
     display: block;
   }
   .content {
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
   }
   .content__title {
     text-align: center;

@@ -19,7 +19,7 @@ body {
   font-size: 0.8rem;
 }
 /* Main */
-main {
+.main {
   background-color: white;
   width: 100%;
   max-width: 90vh;
@@ -46,7 +46,7 @@ main {
   position: absolute;
   z-index: 1;
   left: -5.8rem;
-  top: 50%;
+  top: 56%;
   transform: translateY(-50%);
 }
 
@@ -63,6 +63,9 @@ main {
 .content {
   flex-basis: 50%;
   padding: 2rem;
+}
+.content__title {
+  font-size: 2rem;
 }
 .faq__question {
   display: flex;
